@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>PhotoHub | A Photo Search App</title>
+        <link rel="stylesheet" href="./assets/common.css" />
+        <link rel="stylesheet" href="./assets/search.css" />
+
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <a href="./"><img src="./assets/gallery.png" alt="Logo" class="logo"/></a>
+            <a href="./"><h1 class="title">Photo Hub</h1></a>
+            <form action="./search.html" method="get">
+                <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything"/>
+                <input type="submit" value="Search" class="search"/>
+            </form>
+        </nav> 
+        
+        <!--Main section-->
+        <section>
+            <h1 class="heading">Search For - <span id="search_query"></span></h1>
+            <div class="container" id="result_container"></div>
+        </section>
+
+        <!--Footer of the page-->
+        <footer> 
+            <h5>Design and Developed by Manjunath H Gowda</h5>
+        </footer>
+
+        </footer>
+        <script src="./assets/common.js" ></script>
+        <script src="./assets/search.js" ></script>
+    </body>
+</html>
